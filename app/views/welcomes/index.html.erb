@@ -1,0 +1,10 @@
+<h1><center>宿リスト</center></h1>
+
+<center>
+  <% @owner.each do |owner| %>
+    <h3>
+      <%= link_to "#{owner.name} #{owner.owner}", "welcomes/#{owner.id}/edit" %>
+    </h3>
+  <% end %>
+</center>
+

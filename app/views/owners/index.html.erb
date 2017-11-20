@@ -1,0 +1,27 @@
+<center>
+  <h1><%= current_user.name %></h1>
+</center>
+<h2><%= link_to '追加', new_owner_path %></h2>
+<center>
+</center>
+<center>
+  <form method = "post" action = "">
+    <table border = "２">
+      <h3>予約リスト</h3>
+      <tr>
+        <td>オーナー</td>
+        <td>チェックイン</td>
+        <td>チェックアウト</td>
+        <td>おみやげ</td>
+      </tr>
+      <% @welcome.each do |welcome| %>
+      <tr>
+        <td><%= welcome.name %></td>
+        <td><%= welcome.check_in %></td>
+        <td><%= welcome.check_out %></td>
+        <td><%= welcome.souvenir %></td>
+      </tr>
+      <% end %>
+    </table>
+  </form>
+</center>
