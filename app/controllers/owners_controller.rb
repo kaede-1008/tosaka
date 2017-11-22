@@ -7,7 +7,6 @@ class OwnersController < ApplicationController
 
   def create
     capacity = params[:capacity]
-    puts capacity.to_i
     @owner = Owner.new
     @owner.name = params[:owner][:name]
     @owner.capacity = capacity
@@ -16,7 +15,7 @@ class OwnersController < ApplicationController
     @owner.owner_id = current_user.id
     @owner.save
 
-    redirect_to owners_path
+    redirect_to welcomes_path
   end
 
   def show
