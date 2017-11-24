@@ -2,15 +2,15 @@
   <%= f.hidden_field :owner_id, :value =>  @owner.owner_id %>
   <h4>
     <%= f.label :check_in,  "チェックイン : " %>
-    <%= f.text_field :check_in %>
-  </h4>
+    <%= f.text_field :check_in , placeholder: 'yyyy-mm-dd' %>
+  <h4>
   <h4>
     <%= f.label :check_out, "チェックアウト : " %>
-    <%= f.text_field :check_out %>
-  </h4>
+    <%= f.text_field :check_out, placeholder: 'yyyy-mm-dd' %>
+  <h4>
   <h4>
     <%= f.label :souvenir, "お土産 : " %>
     <%= f.text_field :souvenir %>
-  </h4>
+  <h4>
   <%= f.submit "予約", class: "btn btn-info" %>
 <% end %>
