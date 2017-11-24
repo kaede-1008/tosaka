@@ -1,2 +1,74 @@
-<h1>Abouts#help</h1>
-<p>Find me in app/views/abouts/help.html.erb</p>
+<style type="text/css">
+#google_help {
+    margin:0 0 1em 0; padding:0;
+}
+#google_help a {
+    color:blue;
+}
+
+.box {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    color: #474747;
+    background: whitesmoke;
+    border-left: double 7px #4ec4d3;
+    border-right: double 7px #4ec4d3;
+}
+.box {
+    margin: 0; 
+    padding: 0;
+}
+
+.ribbon {
+    display: inline-block;
+    position: relative;
+    height: 60px;
+    line-height: 60px;
+    vertical-align: middle;
+    text-align: center;
+    padding: 7px 0;
+    font-size: 18px; 
+　　　　background: #7f9dfb;
+　　　 color: #FFF;
+　　　 box-sizing: border-box;
+}
+
+.ribbon h1 {
+    vertical-align: middle;
+    margin: 0;
+    padding: 0 30px 0 15px;
+    border-top: dashed 1px #FFF;
+    border-bottom: dashed 1px #FFF;
+    line-height: 46px;
+}
+
+.ribbon:after{
+    position: absolute;
+    content: '';
+    z-index: 1;
+    top: 0;
+    right: 0;
+    width: 0px;
+    height: 0px;
+    border-width: 30px 15px 30px 0px;
+    border-color: transparent #fff transparent transparent;
+    border-style: solid;
+}
+
+</style>
+
+<div class="ribbon">
+<h1>tosaka help page</h1>
+</div>
+
+    <div align="center"><span>〜tosakaの使い方〜</span></div>
+    <div class="box">
+        <li>ログイン画面</li>
+	<a>ユーザ名とパスワードを入力すると予約できるようになります。</a>
+    　　　　<li>宿リスト</li>
+    　　　　<a>ここで宿を見ることができます。</a>
+    　　　　<li>宿の宿泊登録</li>
+    　　　　<a>宿をの宿泊予約の設定、登録を行うことができます。<br>登録完了後、リストに表示されます。</a>
+</div>
+
+
