@@ -16,7 +16,7 @@ class WelcomesController < ApplicationController
     @welcome.house_id = params[:welcome][:owner_id]
     @welcome.save
 
-    redirect_to '/owners'
+    redirect_to welcomes_path
   end
 
   def show
